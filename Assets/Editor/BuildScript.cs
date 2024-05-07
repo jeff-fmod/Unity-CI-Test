@@ -8,7 +8,7 @@ public class BuildScript : MonoBehaviour
         BuildPlayerOptions options = new BuildPlayerOptions();
         options.scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
         options.target = EditorUserBuildSettings.activeBuildTarget;
-        options.locationPathName = "C:\\dev\\MyProject.exe";
+        options.locationPathName = "C:\\Users\\Public\\Documents\\Unity-CI-Test\\Build\\MyProject.exe";
         options.targetGroup = EditorUserBuildSettings.selectedBuildTargetGroup;
         BuildPipeline.BuildPlayer(options);
     }
