@@ -10,6 +10,8 @@ public class BuildScript : MonoBehaviour
         options.target = EditorUserBuildSettings.activeBuildTarget;
         options.locationPathName = "C:\\Users\\Public\\Documents\\Unity-CI-Test\\_builds\\MyProject.exe";
         options.targetGroup = EditorUserBuildSettings.selectedBuildTargetGroup;
+        options.options = BuildOptions.Development | BuildOptions.AllowDebugging;
+
         BuildPipeline.BuildPlayer(options);
     }
 }
