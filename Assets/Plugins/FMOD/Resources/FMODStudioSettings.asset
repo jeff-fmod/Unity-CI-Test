@@ -475,8 +475,17 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Dialogue_CN
+  - Master
+  Banks:
+  - Dialogue_EN
+  - Dialogue_JP
+  - Jiras
+  - Music
+  - SFX
+  - Vehicles
+  - VO
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
