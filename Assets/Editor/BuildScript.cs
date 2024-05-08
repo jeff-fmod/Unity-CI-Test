@@ -12,6 +12,8 @@ public class BuildScript : MonoBehaviour
         options.targetGroup = EditorUserBuildSettings.selectedBuildTargetGroup;
         options.options = BuildOptions.Development | BuildOptions.AllowDebugging;
 
+        FMODUnity.EventManager.CopyToStreamingAssets(BuildTarget.StandaloneWindows64);
+
         BuildPipeline.BuildPlayer(options);
     }
 }
