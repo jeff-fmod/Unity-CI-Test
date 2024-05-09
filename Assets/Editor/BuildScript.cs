@@ -5,6 +5,8 @@ public class BuildScript : MonoBehaviour
 {
     public static void Build()
     {
+        AssetDatabase.Refresh();
+
         BuildPlayerOptions options = new BuildPlayerOptions();
         options.scenes = new string[] { "Assets/Scenes/SampleScene.unity" };
         options.target = BuildTarget.StandaloneWindows64;
