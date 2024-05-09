@@ -288,7 +288,7 @@ namespace FMODUnity
                     instance.name = "FMOD Studio Integration Settings";
                     instance.CurrentVersion = FMOD.VERSION.number;
                     instance.LastEventReferenceScanVersion = FMOD.VERSION.number;
-
+                    instance.SourceBankPath = "FMODBanks/Desktop";
 #if UNITY_EDITOR
                     if (editorSettings != null)
                     {
