@@ -288,7 +288,13 @@ namespace FMODUnity
                     instance.name = "FMOD Studio Integration Settings";
                     instance.CurrentVersion = FMOD.VERSION.number;
                     instance.LastEventReferenceScanVersion = FMOD.VERSION.number;
-
+                    instance.SourceBankPath = "FMODBanks/Desktop";
+                    instance.BankLoadType = BankLoadType.None;
+                    instance.EventLinkage = EventLinkage.Path;
+                    instance.HasSourceProject = false;
+                    instance.HasPlatforms = false;
+                    instance.EnableErrorCallback = true;
+                    instance.LoggingLevel = FMOD.DEBUG_FLAGS.LOG;
 #if UNITY_EDITOR
                     if (editorSettings != null)
                     {
