@@ -147,5 +147,5 @@
 *.tar lfs-file
 
 # Mac line endings
-*.bundle text eol=crlf
-Info.plist text eol=crlf
+*.bundle text eol=lf
+Info.plist text eol=lf
