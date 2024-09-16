@@ -145,3 +145,7 @@
 *.gz lfs-file
 *.rar lfs-file
 *.tar lfs-file
+
+# Mac line endings
+*.bundle text eol=crlf
+Info.plist text eol=crlf
